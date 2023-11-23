@@ -1,11 +1,12 @@
-D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\bin\Debug\HaloCustomWidgets.exe.config
-D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\bin\Debug\HaloCustomWidgets.exe
 D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\bin\Debug\HaloCustomWidgets.pdb
 D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.csproj.AssemblyReference.cache
-D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.csproj.SuggestedBindingRedirects.cache
 D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.Properties.Resources.resources
 D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.csproj.GenerateResource.cache
 D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.csproj.CoreCompileInputs.cache
-D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.exe
 D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.pdb
 D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloWidget.MainForm.resources
+D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\bin\Debug\HaloCustomWidgets.exe.config
+D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\bin\Debug\HaloCustomWidgets.exe
+D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.csproj.SuggestedBindingRedirects.cache
+D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.exe
+D:\work\git\My Git\HaloCustomWidgets\HaloCustomWidgets\obj\Debug\HaloCustomWidgets.Widget.HaloTitleBase.resources

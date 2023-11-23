@@ -38,7 +38,11 @@
             this.haloCheckBoxBase1 = new HaloWidget.Widget.HaloCheckBoxBase();
             this.haloRadioButtonBase1 = new HaloWidget.Widget.HaloRadioButtonBase();
             this.haloRadioButtonBase2 = new HaloWidget.Widget.HaloRadioButtonBase();
+            this.label1 = new System.Windows.Forms.Label();
+            this.haloTrackBarBase1 = new HaloWidgets.Widget.HaloTrackBarBase();
+            this.haloTitleBase1 = new HaloCustomWidgets.Widget.HaloTitleBase();
             this.haloTabControlBase1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.haloTrackBarBase1)).BeginInit();
             this.SuspendLayout();
             // 
             // haloButtonBase1
@@ -59,6 +63,7 @@
             this.haloButtonBase1.Text = "haloButtonBase1";
             this.haloButtonBase1.TextColor = System.Drawing.Color.White;
             this.haloButtonBase1.UseVisualStyleBackColor = false;
+            this.haloButtonBase1.Click += new System.EventHandler(this.haloButton1_Click);
             // 
             // haloComboBoxBase1
             // 
@@ -113,7 +118,7 @@
             this.haloTabControlBase1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.haloTabControlBase1.FontColor = System.Drawing.Color.DarkGray;
             this.haloTabControlBase1.ItemColor = System.Drawing.Color.WhiteSmoke;
-            this.haloTabControlBase1.ItemSize = new System.Drawing.Size(150, 17);
+            this.haloTabControlBase1.ItemSize = new System.Drawing.Size(50, 17);
             this.haloTabControlBase1.Location = new System.Drawing.Point(437, 216);
             this.haloTabControlBase1.Name = "haloTabControlBase1";
             this.haloTabControlBase1.SelectedFontColor = System.Drawing.Color.Black;
@@ -123,7 +128,7 @@
             this.haloTabControlBase1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.haloTabControlBase1.TabHeight = 17;
             this.haloTabControlBase1.TabIndex = 6;
-            this.haloTabControlBase1.TabWidth = 150;
+            this.haloTabControlBase1.TabWidth = 50;
             // 
             // tabPage1
             // 
@@ -168,7 +173,7 @@
             this.haloCheckBoxBase1.Location = new System.Drawing.Point(441, 107);
             this.haloCheckBoxBase1.Name = "haloCheckBoxBase1";
             this.haloCheckBoxBase1.SelectedFontColor = System.Drawing.Color.Red;
-            this.haloCheckBoxBase1.Size = new System.Drawing.Size(201, 34);
+            this.haloCheckBoxBase1.Size = new System.Drawing.Size(105, 34);
             this.haloCheckBoxBase1.TabIndex = 9;
             this.haloCheckBoxBase1.Text = "haloCheckBoxBase1";
             this.haloCheckBoxBase1.UseVisualStyleBackColor = true;
@@ -182,7 +187,7 @@
             this.haloRadioButtonBase1.Location = new System.Drawing.Point(667, 107);
             this.haloRadioButtonBase1.Name = "haloRadioButtonBase1";
             this.haloRadioButtonBase1.SelectedFontColor = System.Drawing.Color.Black;
-            this.haloRadioButtonBase1.Size = new System.Drawing.Size(195, 34);
+            this.haloRadioButtonBase1.Size = new System.Drawing.Size(100, 34);
             this.haloRadioButtonBase1.TabIndex = 10;
             this.haloRadioButtonBase1.TabStop = true;
             this.haloRadioButtonBase1.Text = "haloRadioButtonBase1";
@@ -203,11 +208,54 @@
             this.haloRadioButtonBase2.Text = "haloRadioButtonBase2";
             this.haloRadioButtonBase2.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(80, 226);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 89);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "label1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // haloTrackBarBase1
+            // 
+            this.haloTrackBarBase1.AutoSize = false;
+            this.haloTrackBarBase1.BackColor = System.Drawing.Color.LightGray;
+            this.haloTrackBarBase1.BarColor = System.Drawing.Color.Black;
+            this.haloTrackBarBase1.BarSize = 16;
+            this.haloTrackBarBase1.LineColor = System.Drawing.Color.DarkGray;
+            this.haloTrackBarBase1.Location = new System.Drawing.Point(66, 373);
+            this.haloTrackBarBase1.Maximum = 100;
+            this.haloTrackBarBase1.Name = "haloTrackBarBase1";
+            this.haloTrackBarBase1.Size = new System.Drawing.Size(263, 37);
+            this.haloTrackBarBase1.TabIndex = 13;
+            this.haloTrackBarBase1.Value = 45;
+            // 
+            // haloTitleBase1
+            // 
+            this.haloTitleBase1.BackColor = System.Drawing.Color.LightBlue;
+            this.haloTitleBase1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.haloTitleBase1.FontColor = System.Drawing.Color.Blue;
+            this.haloTitleBase1.Location = new System.Drawing.Point(0, 0);
+            this.haloTitleBase1.MouseDownEvent = null;
+            this.haloTitleBase1.MouseMoveEvent = null;
+            this.haloTitleBase1.MouseUpEvent = null;
+            this.haloTitleBase1.Name = "haloTitleBase1";
+            this.haloTitleBase1.Size = new System.Drawing.Size(1264, 26);
+            this.haloTitleBase1.TabIndex = 14;
+            this.haloTitleBase1.TitleFont = new System.Drawing.Font("Calibri", 10F);
+            this.haloTitleBase1.TitleText = "Here is title area";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ControlBox = false;
+            this.Controls.Add(this.haloTitleBase1);
+            this.Controls.Add(this.haloTrackBarBase1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.haloRadioButtonBase2);
             this.Controls.Add(this.haloRadioButtonBase1);
             this.Controls.Add(this.haloCheckBoxBase1);
@@ -216,10 +264,20 @@
             this.Controls.Add(this.haloListBoxBase1);
             this.Controls.Add(this.haloComboBoxBase1);
             this.Controls.Add(this.haloButtonBase1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
+            this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "s";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
             this.haloTabControlBase1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.haloTrackBarBase1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -236,6 +294,9 @@
         private Widget.HaloCheckBoxBase haloCheckBoxBase1;
         private Widget.HaloRadioButtonBase haloRadioButtonBase1;
         private Widget.HaloRadioButtonBase haloRadioButtonBase2;
+        private System.Windows.Forms.Label label1;
+        private HaloWidgets.Widget.HaloTrackBarBase haloTrackBarBase1;
+        private HaloCustomWidgets.Widget.HaloTitleBase haloTitleBase1;
     }
 }
 

@@ -104,7 +104,7 @@ namespace HaloWidget.Widget
 
         private void TabControl_DrawItem(object sender, DrawItemEventArgs e)
         {
-            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter | TextFormatFlags.PathEllipsis;
+            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter | TextFormatFlags.EndEllipsis;
             Graphics graphic = e.Graphics;
 
             Brush brush = new SolidBrush(itemColor);

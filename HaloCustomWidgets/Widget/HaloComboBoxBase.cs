@@ -112,7 +112,7 @@ namespace HaloWidget.Widget
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
-            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.PathEllipsis;
+            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis;
 
             int iconMargin = (Height - arrowIconSize) / 2;
             int rightMargin = 6;
@@ -145,9 +145,11 @@ namespace HaloWidget.Widget
 
             if (SelectedIndex >= 0)
             {
+                Rectangle textRectangle = new Rectangle(ClientRectangle.X, ClientRectangle.Y, 
+                    ClientRectangle.Width - arrowIconSize - rightMargin * 2, ClientRectangle.Height);
                 using (Font font = new Font("calibri", fontSize, FontStyle.Bold))
                 {
-                    TextRenderer.DrawText(pevent.Graphics, SelectedItem.ToString(), font, ClientRectangle, inSideTextColor, flags);
+                    TextRenderer.DrawText(pevent.Graphics, SelectedItem.ToString(), font, textRectangle, inSideTextColor, flags);
                 }
             }
         }

@@ -78,7 +78,7 @@ namespace HaloWidget.Widget
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
-            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.PathEllipsis;
+            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis;
 
             int iconSize = 10;
             int iconMargin = (Height - iconSize) / 2;

@@ -76,7 +76,7 @@ namespace HaloWidget.Widget
 
         private void ComboBox_DrawItem(object sender, DrawItemEventArgs e)
         {
-            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter ;
+            const TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis;
             
             if (e.Index < 0 || Items.Count <= 0) return;
 
